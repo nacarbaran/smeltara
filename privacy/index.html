@@ -73,15 +73,22 @@
         allow it, the game may load advertisements at startup so a reward video is ready when you
         choose it. An advertisement is shown only when you select a rewarded-ad action. If an
         advertisement is unavailable, you can continue playing without it.</p>
-      <p>The current release uses restricted Google advertising. It does not ask for your age,
-        date of birth or age sharing and does not request permission for cross-app tracking.
-        It does not enable Unity Ads or AppLovin mediation, Firebase Analytics or Firebase Remote
-        Config. In-app purchases and production account sign-in are disabled.</p>
+      <p>The current release uses general-audience Google advertising. It does not ask for your age,
+        date of birth or age sharing. After Google’s privacy service says advertisements may be
+        requested, iOS may show Apple’s tracking permission. If you decline, Smeltara keeps the
+        advertising identifier unavailable and disables personalized advertising; optional
+        rewarded ads and gameplay continue. If you allow tracking, and your applicable Google
+        privacy choices also permit it, Smeltara and Google’s advertising partners may use Apple’s
+        advertising identifier to track activity across other companies’ apps and websites so
+        optional rewarded ads can be personalized. You can later change Smeltara’s tracking
+        permission in iOS Settings. The current release does not enable Unity Ads or AppLovin
+        mediation, Firebase Analytics or Firebase Remote Config. In-app purchases and production
+        account sign-in are disabled.</p>
       <p>Google’s advertising and privacy services may process your IP address (including
         approximate location inferred from it), device or app identifiers, ad and app interactions,
         and diagnostic or performance information. Google and its advertising partners process
         advertising-service data for ad delivery, reporting and fraud prevention under their
-        policies. Restricted treatment limits advertising processing; it does not mean that no
+        policies. A denied tracking choice limits advertising processing; it does not mean that no
         information leaves the device. Smeltara does not send its gameplay save file, cloud account
         details or a birth date to Google for advertising.</p>
       <p>The game checks Google’s privacy eligibility without opening an automatic startup consent
@@ -126,8 +133,7 @@
 
       <h2>8. Intended audience</h2>
       <p>Smeltara is intended for players aged 13 and over. The game does not collect a birth date
-        or ask players to share their age. Restricted advertising is applied without deciding that
-        any particular player is an adult.</p>
+        or ask players to share their age. Apple’s tracking choice is not used as an age signal.</p>
       <p>Local play does not require an account. Test-version Unity Player Accounts and Cloud Save are not intended
         for a child below the digital-consent age that applies where they live unless a parent or
         guardian has provided any required consent. Such players should use local play only unless a
